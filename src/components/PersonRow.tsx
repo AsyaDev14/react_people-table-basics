@@ -15,11 +15,11 @@ export const PersonRow: React.FC<Props> = ({ person, people }) => {
   const selectedPerson = slug === personSlug;
 
   const mother: Person | undefined = people.find(
-    person => person.name === motherName,
+    personItem => personItem.name === motherName,
   );
 
   const father: Person | undefined = people.find(
-    person => person.name === fatherName,
+    personItem => personItem.name === fatherName,
   );
 
   const motherActiveName = motherName || '-';

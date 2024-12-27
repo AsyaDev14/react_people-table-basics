@@ -6,6 +6,7 @@ export const Navbar = () => {
     classNames('navbar-item', {
       'has-background-grey-lighter': isActive,
     });
+
   return (
     <nav
       data-cy="nav"
